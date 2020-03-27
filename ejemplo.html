@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>  
+
+/* var miHonda = { color: 'red', ruedas: 4, motor: { cilindros: 4, cantidad: 2.2 } };
+var miCoche = [miHonda, 2, 'Buen estado', 'comprado 1997'];
+var nuevoCoche = miCoche.slice(0, 2);
+
+//  Muestra los valores de myCar, newCar y el color de myHonda.
+console.log('miCoche = ' + JSON.stringify(miCoche));
+console.log('nuevoCoche = ' + JSON.stringify(nuevoCoche));
+console.log('miCoche[0].color = ' + miCoche[0].color);
+console.log('nuevoCoche[0].color = ' + nuevoCoche[0].color);
+
+// Cambia el color de miHonda.
+ miHonda.color = 'azul';
+console.log('El nuevo color de mi Honda es ' + miHonda.color); 
+
+// Muestra el color de myHonda referenciado desde ambos arrays. 
+console.log('miCoche[0].color = ' + miCoche[0].color);
+
+console.log('nuevoCoche[0].color = ' + nuevoCoche[0].color);
+
+ alert('miCoche[0].color = ' + miCoche[0].color) // [] 
+alert('nuevoCoche[0].color = ' + nuevoCoche[0].color) // []  */
+
+
+window.alert("Ejercicio 1");
+            do{
+                var usuario = window.prompt("señor_usuario_porfavor_digite_cuantos_numeros_desea_ordenar");
+            }while(window.isNaN(usuario));
+                 var u = usuario;
+            for (i=1;i<=u;i++) {
+                do{
+                var nota = window.prompt("digite el numero a ordenar "+i);
+                //mientras se pidan numeros al usuario ejecuteme esto 
+                }while(window.isNaN(nota));
+                document.write("<br/>");
+                document.write("ordenar "+i+" : "+nota); 
+
+                // almaceno el valor total de numeros a ordenar en un array 
+                var arrayNumbers = [nota];
+                
+                // Sintaxis ES5
+                console.log(arrayNumbers.sort(function (a, b){
+               return a - b;
+                }))
+
+            }
+
+</script>
